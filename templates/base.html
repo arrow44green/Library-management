@@ -1,0 +1,56 @@
+<!-- Déclare le type de document : -->
+<!DOCTYPE html>
+
+<!-- Définit la langue de la page HTML comme français : -->
+<html lang="fr">
+
+<!-- Débute la section des métadonnées de la page : -->
+<head>
+
+    <!-- Spécifie l'encodage : -->
+    <meta charset="UTF-8">
+
+    <!-- Définit le titre de la page : -->
+    <title>Bibliothèque</title>
+
+    <!-- Lien vers la feuille de style CSS : -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!-- Ferme la section des métadonnées de la page : -->
+</head>
+
+<!-- Débute la section du contenu principal de la page : -->
+<body>
+
+    <!-- En-tête du document : -->
+    <header>
+
+        <!-- Titre de niveau 1 pour la bibliothèque : -->
+        <h1>Bibliothèque</h1>
+
+        <!-- Fin de l'en-tête : -->
+    </header>
+
+    <!-- Début de la section principale du contenu : -->
+    <main>
+
+        <!-- Bloc de contenu à remplir dans le modèle : -->
+        {% block content %}{% endblock %}
+
+        <!-- Fin de la section principale du contenu : -->
+    </main>
+
+    <!-- Pied de page : -->
+    <footer>
+
+        <!-- Texte indiquant l'année et le nom du propriétaire de la bibliothèque : -->
+        <p>© 2024 Vasse Claude Bibliothèque</p>
+
+        <!-- Fin du pied de page : -->
+    </footer>
+
+    <!-- Fin du corps du document : -->
+</body>
+
+<!-- Fin du document HTML : -->
+</html>

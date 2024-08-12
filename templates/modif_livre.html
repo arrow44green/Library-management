@@ -1,0 +1,35 @@
+<!-- Extension du modèle à partir de "base.html" : -->
+{% extends "base.html" %}
+
+<!-- Bloc de contenu à remplir dans le modèle : -->
+{% block content %}
+
+<!-- Titre de niveau 2 pour modifier le livre : -->
+<h2>Modifier le Livre</h2>
+
+<!-- Formulaire avec méthode POST : -->
+<form method="post">
+
+    <!-- Étiquette pour le champ "Titre" : -->
+    <label for="title">Titre :</label>
+
+    <!-- Champ de saisie de texte pour le titre avec la valeur pré-remplie : -->
+    <input type="text" id="title" name="title" value="{{ book.title }}" 
+    required><br>
+    
+    <!-- Étiquette pour le champ "Auteur" : -->
+    <label for="author">Auteur :</label>
+    
+    <!-- Champ de saisie de texte pour l'auteur avec la valeur pré-remplie et requis, suivi d'un saut de ligne : -->
+    <input type="text" id="author" name="author" value="{{ book.author }}
+    " required><br>
+    
+    
+    <!-- Bouton de soumission du formulaire avec le libellé "Enregistrer" : -->
+    <input type="submit" value="Enregistrer">
+
+    <!-- Fin du formulaire : -->
+</form>
+
+<!-- Fin du bloc de contenu : -->
+{% endblock %}

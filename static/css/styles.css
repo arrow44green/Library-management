@@ -1,0 +1,93 @@
+/* Style pour le corps du document */
+body {
+    background-image: url("/static/img/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour l'en-tête */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Style pour le titre principal */
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Style pour le bloc principal */
+main {
+    background-color: #333; /* Couleur de fond semi-transparente pour le contenu */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow:  0 0 20px #00ffff;
+    position: relative;
+    z-index: 1;
+    margin-top: 400px;
+}
+
+/* Style pour les titres de niveau 2 */
+h2 {
+    color: #fff;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style pour la liste des livres */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    color: #fff;
+    border-bottom: 1px solid #00ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Conteneur pour les boutons Modifier et Supprimer */
+ul li a {
+    margin-left: 10px; /* Espace entre les boutons */
+}
+
+ul li div.actions {
+    margin-left: auto;
+    display: flex;
+    gap: 10px; /* Espace entre les boutons */
+}
+
+/* Style pour les liens */
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 350px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour le pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

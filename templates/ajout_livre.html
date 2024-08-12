@@ -1,0 +1,32 @@
+<!-- Extension du modèle à partir de "base.html" : -->
+{% extends "base.html" %}
+
+<!-- Bloc de contenu à remplir dans le modèle : -->
+{% block content %}
+
+<!-- Titre de niveau 2 pour ajouter le livre : -->
+<h2>Ajouter un Livre</h2>
+
+<!-- Formulaire avec méthode POST : -->
+<form method="post">
+
+    <!-- Étiquette pour le champ "Titre" : -->
+    <label for="title">Titre :</label>
+
+    <!-- Champ de saisie de texte pour le titre avec un champ requis et un saut de ligne : -->
+    <input type="text" id="title" name="title" required><br>
+
+    <!-- Étiquette pour le champ "Auteur" : -->
+    <label for="author">Auteur :</label>
+
+    <!-- Champ de saisie de texte pour l'auteur avec un champ requis et un saut de ligne : -->
+    <input type="text" id="author" name="author" required><br>
+
+    <!-- Bouton de soumission du formulaire avec le libellé "Ajouter" : -->
+    <input type="submit" value="Ajouter">
+
+    <!-- Fin du formulaire : -->
+</form>
+
+<!-- Fin du bloc de contenu : -->
+{% endblock %}
